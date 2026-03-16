@@ -15,3 +15,14 @@ total_sales = data.groupby("Product")["Total"].sum()
 
 print("\nTotal sales per product:")
 print(total_sales)
+
+
+import matplotlib.pyplot as plt
+
+total_sales.plot(kind="bar")
+
+plt.title("Total Sales per Product")
+plt.xlabel("Product")
+plt.ylabel("Total Sales")
+
+plt.show()
